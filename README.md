@@ -17,7 +17,7 @@ After installing the software you need to install the dependencies for the proje
 
 ### Run VidTube
 
-If you run the project for the first time, you will have to change the name of the `.env.example` file to example and change the mysql dependencies according to your database. 
+If you run the project for the first time, you will have to change the name of the `.env.example` file to `.env` and change the mysql dependencies according to your database. 
 If you haven't created a database already in **MySQL** open MySQL terminal and type in your password. Now you just have to run the command `CREATE DATABASE [YOUR DATABASE NAME]`. Now change the dependencies in the .env file. 
 
 If you want to run the project, you will have to follow these steps everytime you want to run it. You will have to run these commands both in a seperate terminal in your project folder in order to use the project
