@@ -4,6 +4,7 @@
     import { useForm } from "@inertiajs/svelte";
  
     export let errors;
+    export let user;
 
     let videoInput;
     let thumbnailInput;
@@ -21,10 +22,10 @@
 
         $form.post('/videos/store')
     }
-
+    
 </script>
 
-<CreateLayout>
+<CreateLayout {user}>
 
     <form enctype="multipart/form-data" class="font-poppins" on:submit|preventDefault={handleSubmit}>
         <h1 class="text-3xl font-semibold">Upload Your Video</h1>

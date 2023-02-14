@@ -10,6 +10,9 @@ module.exports = {
 			outlineWidth: {
 				1: '1px', 
 				3: '3px'
+			}, 
+			fontFamily: {
+				poppins: 'Poppins, sans-serif'
 			}
 		},
 	},

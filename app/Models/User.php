@@ -42,7 +42,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function vidoes() {
-        return $this->belongsTo(Video::class, 'user_id');
+    public function videos() {
+        return $this->hasMany(Video::class, 'user_id');
+    }
+
+    public function likes() {
+        return $this->hasMany(Like::class, 'user_id');
+    }
+
+    public function views() {
+        return $this->hasMany(View::class ,'user_id');
     }
 }

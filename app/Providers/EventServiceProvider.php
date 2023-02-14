@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\ChildCreated;
+use App\Listeners\UpdateParent;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;

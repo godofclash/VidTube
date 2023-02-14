@@ -58,6 +58,6 @@ class UserController extends Controller
         Session::invalidate();
         Session::regenerateToken();
         
-        return to_route('login');
+        return to_route('home');
     }
 }
