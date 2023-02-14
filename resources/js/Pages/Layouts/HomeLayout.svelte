@@ -2,10 +2,13 @@
     import '/resources/css/app.css'
     
     import Header from '../Components/Header.svelte';
+
 </script>
 
-<Header />
+<svelte:body class="min-h-screen min-w-screen bg-slate-100"/>
 
-<main class="bg-slate-100 min-h-screen min-w-screen">
+<Header/>
+
+<main>
     <slot />
 </main>

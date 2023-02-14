@@ -10,9 +10,9 @@ Route::middleware(['auth'])->group(function() {
 
     Route::get('videos/create', [VideoController::class, 'create'])->name('create');
     Route::post('/videos/store', [VideoController::class, 'store']);
+    Route::post('/videos/like', [VideoController::class, 'like']);
+    Route::get('/videos/{video}', [VideoController::class, 'show'])->name('show');
 });
-
-
 
 Route::controller(UserController::class)->group(function() {
     Route::get('/login', 'login')->name('login');

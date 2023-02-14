@@ -14,10 +14,19 @@ class Video extends Model
         'description', 
         'video', 
         'thumbnail', 
-        'user_id'
+        'user_id', 
+        'views'
     ];
 
     public function user() {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function likes() {
+        return $this->hasMany(Like::class, 'video_id');
+    }
+
+    public function views() {
+        return $this->hasMany(View::class, 'video_id');
     }
 }

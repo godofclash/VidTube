@@ -1,18 +1,20 @@
 <script>
-    import { Video } from "./Components";
+    import { VideoPreview } from "./Components";
     import { HomeLayout } from "./Layouts"
-    import { Link } from "@inertiajs/svelte";
 
     export let videos;
+    export let user;
 
 </script>
 
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <HomeLayout>
     {#each videos as video}
-        <Video {video} />
+        <VideoPreview {video} />
     {/each}
-
-    <Link href="/videos/create">Create</Link>
 </HomeLayout>
     
 
